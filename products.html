@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEWAY Industry</title>
+    <link rel="stylesheet" href="nav.css" type="text/css" />
+    <link rel="stylesheet" href="product.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            //alert("I am checked!");
+            var checkBox = document.getElementById("chk");
+
+            // Get the UL element
+            var ul = document.getElementById("menu");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                ul.style.right = "-120%";
+            } else {
+                ul.style.right = "-50%";
+            }
+
+        } 
+    </script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #divcontainer {
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 20px;
+        }
+
+        #divcontainer div {
+            margin-bottom: 50px;
+        }
+
+        #divdesc {
+            width: 100%;
+            height: 150px;
+        }
+
+        #pdesc {
+            width: 700px;
+            display: block;
+            background-color: rgba(211, 73, 32, 0.6);
+            padding: 20px 20px;
+            line-height: 1.5;
+            font-size: 20px;
+            text-align: justify;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .flex-container{
+           width: 1100px;
+           display: flex;
+           align-items: center;
+           flex-direction: row;
+           flex-wrap: wrap;
+           background-color: #f1f1f1;
+        }
+        .flex-container>div{
+           flex:0 0 48%;
+           background-color: DodgerBlue;
+           color: white;
+           width: 98%;
+           height: 350px;
+           margin: 10px;
+           text-align: center;
+           font-size: 18px;
+        }
+        .flex-container div img{
+          width: 98%;
+          height: 330px;
+          margin: 7px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divnav">
+        <span class="sphead">
+            <img src="CompanyLogoSm.png" />
+            <p>NEWAY INDUSTRIES</p>
+        </span>
+        <ul class="menu" id="menu">
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li>
+                <div class="dropdown">
+                    <span>MATERIAL</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="tiles.html">TILES</a></li>
+                            <li><a href="marble.html">MARBLE</a></li>
+                            <li><a href="light.html">LIGHTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <input type="checkbox" id="chk" onclick="myFunction()">
+        <!--
+                            <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                            -->
+        <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+    </div>
+
+
+    <div id="divcontainer">
+        <div id="divdesc">
+            <p id="pdesc">We are able to produce urban, modern or classic styles.
+                All products manufactured locally with premium quality and material.
+            </p>
+        </div>
+        <div class="flex-container">
+          <div id="firstleft" style="order: 1">
+            <img src="product1.jpg" width="600px" />
+          </div>
+          <div id="firstright" style="order: 2">
+            <p>
+                The showroom in 49 Knight Street is for handy appliance showroom.
+                It is a more than 10,000 square feet showroom for different kinds of applicance.
+            </p>
+          </div>
+          <div id="secondleft" style="order: 3">
+            <p>
+                Supernova Saloon located in The Versatile Building in
+                232 Lonsdale Ave, North Vancouver, Canada.
+                The salon is a boutique studio filled with natural light and comfy seating.
+                Neway Industries Inc. finished the project on 2014.
+            </p>
+          </div>
+          <div id="secondright" style="order: 4">
+            <img src="product2.jpg" width="600px" />
+          </div>
+          <div id="thirdleft" style="order: 5">
+            <img src="product3.jpg" width="600px" />
+          </div>
+          <div id="thirdright" style="order: 6">
+            <p>The divine floor project is located in
+                3481 Main St, Vancouver.
+                Divine Flooring is a multi-award-winning designer flooring company.
+                The elegant room shows high-end flooring and custom wood.
+            </p>
+         </div>
+         <div id="fourthleft" style="order: 7">
+         <p>Cafe in the University of Calgary, in 2015</p>
+         </div>
+         <div id="fourthright" style="order: 8">
+           <img src="pictures/cafecalgary.jpg" />
+         </div>
+         <div id="fifthleft" style="order: 9">
+           <img src="pictures/richmondbarber.jpg" />
+         </div>
+         <div id="fifthright" style="order: 10">
+           <p>Richmond Barber in Richmnd Center, 2016</p>
+         </div>
+    </div>
+
+    <footer style="text-align:center">&copy;Neway Industry. All rights reserved</footer>
+</body>
+
+</html>

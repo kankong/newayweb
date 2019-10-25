@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEWAY Industry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="nav.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            //alert("I am checked!");
+            var checkBox = document.getElementById("chk");
+
+            // Get the UL element
+            var ul = document.getElementById("menu");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                ul.style.right = "-120%";
+            } else {
+                ul.style.right = "-50%";
+            }
+
+        } 
+    </script>
+</head>
+
+<body>
+    <div id="divnav">
+        <span class="sphead">
+            <img src="CompanyLogoSm.png" />
+            <p>NEWAY INDUSTRIES</p>
+        </span>
+        <ul class="menu" id="menu">
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li>
+                <div class="dropdown">
+                    <span>MATERIAL</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="tiles.html">TILES</a></li>
+                            <li><a href="marble.html">MARBLE</a></li>
+                            <li><a href="light.html">LIGHTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <input type="checkbox" id="chk" onclick="myFunction()">
+        <!--
+                    <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                    -->
+        <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+    </div>
+    <!--top slider by image-->
+    <div id="divtopslider"> </div>
+
+    <div id="container">
+
+        <div id="divmiddle">
+            <table>
+                <tr>
+                    <td>
+                        <div class="divmiddlebox">
+                            <img src="icon-x1.png" />
+                            <p><a href="#">Construction</a></p>
+                            <p>Ground up, base build construction from start to finish</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="divmiddlebox">
+                            <img src="icon-c6.png" />
+                            <p><a href="#">Material Logistics</a></p>
+                            <p>Purchase and deliver construction materials from our online store</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="divmiddlebox">
+                            <img src="icon-x6.png" />
+                            <p><a href="#">Renovation</a></p>
+                            <p>Rebuild, renovate and improve your home or business</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="divmiddlebox">
+                            <img src="icon-c4.png" />
+                            <p><a href="#">Industry Leading Warranty</a></p>
+                            <p>Peace of mind with the Neway industry guarantee for all materials and projects</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p id="pmiddle">WHO <font color="#ccaa33">WE ARE</font>
+        </p>
+        <div id="divbottom">
+            <table>
+                <tr>
+                    <td width="50%" style="padding-right:30px; margin-right:30px;">
+                        <div id="bottomtable">
+                            <h2>The NEWAY Industry Vision</h2>
+                            <p>The NEWAY Industries team works together to provide a value added service to the
+                                typical material procurement process. From manufacturing to installation we work
+                                to control the quality, scheduling, storage, delivery, insurance and warranty of
+                                our trusted industry partner's products. All sales are processed by our team and
+                                managed inside of a unified framework with built in quality control that is
+                                constantly evolving.</p>
+                            <p>The founders of NEWAY Industries have a long history in the trades and
+                                construction industry as well as systems building and contract development
+                                for insurance and risk management. As our team advanced the problem solving
+                                skills necessary to succeed we developed specific practices to avoid the hazards
+                                and delays that plague the construction process. These often repetitive and
+                                unnecessary delays run up costs unexpectedly and hurt your bottom line so we created
+                                innovative solutions to streamline the process.
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <iframe width="455" height="256" src="https://www.youtube.com/embed/fIxeYtdJSAM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <footer style="">
+            <table>
+                <tr>
+                    <td style="padding-left: 50px; ">
+                        <p style="font-size: 14px;">HAVE ANY QUESTION?</p>
+                        <p style="font-size: 24px;"> DON'T HESITATE TO CONTACT US</p>
+                    </td>
+                    <td><button><a href="contact.html">CONTACT US</a></button></td>
+                </tr>
+            </table>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neway Industries - CONSTRUCTION MATERIAL</title>
+<link rel="stylesheet" href="nav.css" type="text/css" />
+<link rel="stylesheet" href="catelog.css" type="text/css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            //alert("I am checked!");
+            var checkBox = document.getElementById("chk");
+
+            // Get the UL element
+            var ul = document.getElementById("menu");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                ul.style.right = "-120%";
+            } else {
+                ul.style.right = "-50%";
+            }
+
+        } 
+    </script>
+<style>
+p{font-family:'Abril Fatface', sans-serif;}   
+a{font-family:'Abril Fatface', sans-serif;}
+span {font-family:'Abril Fatface', sans-serif;}
+#buttons {margin-top:10px; margin-left: 5%;  padding:0px;}
+button{font-size:14px; font-weight:bold; width:150px; height:60px;}
+button:hover{cursor:pointer;}
+</style>
+<script>
+function loadajax(vtype){
+  //alert("Load the ajax");
+  var link = "ajaxlight.php?type="+vtype;
+  var xhttp = new XMLHttpRequest();
+  
+  xhttp.onreadystatechange = function(){
+     if(this.readyState == 4 && this.status == 200){
+        document.getElementById("divpics").innerHTML = this.responseText;
+     }
+   };
+   
+   xhttp.open("GET", link, true);
+   xhttp.send();
+   
+}
+function showMyImage(imgPathName){
+  var img=document.getElementById('image-holder');
+  img.src = imgPathName;
+  img.style.display = 'block';
+}
+
+function closeimg(){
+  var img = document.getElementById('image-holder');
+  img.src= "";
+  img.style.display = 'none';
+}
+</script>
+</head>
+<body onload="loadajax('Column_light')">
+    <div id="divnav">
+        <span class="sphead">
+            <img src="CompanyLogoSm.png" />
+            <p>NEWAY INDUSTRIES</p>
+        </span>
+        <ul class="menu" id="menu">
+        
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li>
+                <div class="dropdown">
+                    <span>MATERIAL</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="tiles.html">TILES</a></li>
+                            <li><a href="marble.html">MARBLE</a></li>
+                            <li><a href="light.html">LIGHTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <input type="checkbox" id="chk" onclick="myFunction()">
+        <!--
+        <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+        -->
+        <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+    </div>
+
+<div id="buttons">
+    <button onclick="loadajax('Column_Light')">Column Light</button>
+    <button onclick="loadajax('Flat_Light')">Flat Light</button>
+    <button onclick="loadajax('Source_Light')">Source Light</button>
+    <button onclick="loadajax('Bucket_light')">Bucket Light</button>
+    <button onclick="loadajax('Ceiling_Light')">Ceiling Light</button>
+    <button style="font-size:12px;" onclick="loadajax('Elephant_Nose_Light')">Elephant Nose Light</button>
+    <button onclick="loadajax('Wall_Ceiling_Light')">Wall Ceiling Light</button>
+    <button onclick="loadajax('Track_Light')">Track Light</button>
+</div>
+<div id="divpics"></div>
+<div>
+    <img id="imglight" width="95%" />
+</div>
+<img id="image-holder" alt="" onclick="closeimg();" />
+</body>
+</html>

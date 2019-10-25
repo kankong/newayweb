@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEWAY Industry</title>
+    <link rel="stylesheet" href="nav.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            //alert("I am checked!");
+            var checkBox = document.getElementById("chk");
+
+            // Get the UL element
+            var ul = document.getElementById("menu");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                ul.style.right = "-120%";
+            } else {
+                ul.style.right = "-50%";
+            }
+
+        } 
+    </script>
+    <style>
+        #divcontainer {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        #tbcontact {
+            position: relative;
+            left: 300px;
+        }
+
+        #tbcontactbelow {
+            margin: 10px auto;
+            width: 800px;
+        }
+
+        #tbcontactbelow td img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #tbcontactbelow td img:hover {
+            width: 70px;
+        }
+
+        #tbcontactbelow td {
+            text-align: center;
+        }
+
+        #divmap {
+            margin: 0;
+            height: 500px;
+            /* The height is 500 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+            background-image: url('map.png');
+        }
+    </style>
+    <script async
+        defer //src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm37TAeokFImA0_hrebF49L9KJTwgynyk&callback=initMap">
+        </script> 
+    </head>
+    <body>
+        <div id="divnav">
+                <span class="sphead">
+                    <img src="CompanyLogoSm.png" />
+                    <p>NEWAY INDUSTRIES</p>
+                </span>
+                <ul class="menu" id="menu">
+        
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <span>MATERIAL</span>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="tiles.html">TILES</a></li>
+                                    <li><a href="marble.html">MARBLE</a></li>
+                                    <li><a href="light.html">LIGHTS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <input type="checkbox" id="chk" onclick="myFunction()">
+                <!--
+                            <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                            -->
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-ellipsis-h"></i>
+                </label>
+            </div>
+
+<div id="divmap"></div>
+
+<div id="divcontainer">
+    <h1>CONTACT US</h1>
+    <p>
+    We are Conveniently located in Richmond BC. 
+    There we have a 11,000 sq' warehouse and millwork shop. 
+    We have a paint booth, internal and external procurement storage, along with a 9,000 sq' stone 
+    cutting and polishing facility.
+    </p>
+    <table id="tbcontact">
+        <tr><td>Please come by and see us!</td></tr>
+        <tr><td><b></b>WORKING TIME</b></td></tr>
+        <tr><td>Monday - Friday:........08:00 - 4:30</td></tr>
+        <tr><td>Saturday:...............08:00 - 12:00</td></tr>
+        <tr><td>Sunday:.................Close</td></tr>
+        
+    </table>
+    <table id="tbcontactbelow">
+    <tr>
+    <td width="33%"><img src="icon-ct-1.png" /></td>
+    <td width="33%"><img src="icon-ct-2.png" /></td>
+    <td width="33%"><img src="icon-ct-3.png" /></td>
+    </tr>
+    <tr>
+        <td><b>PHONE</b></td>
+        <td><b>ADDRESS</b></td>
+        <td><b>EMAIL</b></td>
+    </tr>
+    <tr>
+        <td><b>778-903-3787</b></td>
+        <td><b>3-2480 Shell Road<br />Richmond, B.C.</b></td>
+        <td><b>newayindustries@gmail.com</b></td>
+    </tr>
+    </table>
+</div>
+
+<footer style="text-align:center">&copy;Neway Industry. All rights reserved</footer>
+</body>
+
+</html>

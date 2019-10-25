@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+           function sendform(){
+             var user = document.getElementById('txtuser').value;
+             var pass = document.getElementById('pass').value;
+             if(user == ""){
+                  alert("username cannot be empty");
+                  document.getElementById('txtuser').focus();
+		  return false;
+             }else if(pass == ""){
+                  alert("Password cannot be empty");
+                  document.getElementById('pass').focus();
+                  return false;
+	     }else{
+                //alert("I will send the form");
+		return true;
+             }
+	     //alert(user+pass);
+             
+           }
+        </script>
+    </head>
+    <body>
+     
+        <div class="login-box">
+            <h1>Login</h1>
+            <form id="frmlogin" action="logincheck.php" method="POST">
+            <div class="textbox">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text"  id="txtuser" placeholder="Username" name="txtuser" value="">
+            </div>
+
+            <div class="textbox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <input type="password" id="pass" placeholder="Password" name="pass" value="">
+            </div>
+
+            <input class="btn" type="submit" name="" value="Sign in" onclick="sendform()">
+            </form>
+        </div>
+      
+    </body>
+</html>

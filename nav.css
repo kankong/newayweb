@@ -1,0 +1,100 @@
+#divnav {
+  background-image:linear-gradient(#daafa7, #91bef1); 
+  height: 100px; margin:0;
+}
+#divnav .sphead {float:left; color:#ffffff; margin-left: 24px; font-size:32px; font-weight:bold;}
+.sphead img, p {float:left;}
+.sphead img {position:relative; top:10px; margin:0 10px;}
+.menu{float: right; margin-top:50px; margin-right:50px; width:500px;}
+.menu li{float:left; display:block; margin-left: 10px;}
+.menu li:after {clear:both; float:none;}
+.menu li a{color:#ffffff; text-decoration: none; font-weight:bold; }
+.menu li a:hover{ color:#ece91a; border-top:3px solid red;}
+.menu ul {float:left; margin-top:5px; padding-left:2px; width:200px;}
+.menu ul ul li{float:none; padding-top:8px;}
+.menu ul li ul li a{ color:#354fa7;}
+.menu ul li ul li a:hover{ color:#0d042c; border-top:3px solid red;}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown span{ color: #ffffff; font-weight:bold;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left:20px;
+  background-color: rgba(211, 26, 26, 0.9);
+  height:100px;
+  box-shadow: 0px 8px 16px 0px rgba(97, 38, 38, 0.5);
+  padding: 2px 2px;
+  z-index: 1;
+  width: 100px;
+}
+
+.dropdown-content li{ 
+  clear:both; display: block; padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.show-menu-btn, .hide-menu-btn{
+  transition: 0.4s; font-size: 30px; cursor: pointer; display:none; color: #ffffff;
+}
+.show-menu-btn:hover, .hide-menu-btn:hover { color: #3498db;}
+.show-menu-btn{ float: right;}
+.show-menu-btn i{ line-height: 100px; }
+
+#chk{
+  position: absolute; visibility: none; z-index: -11;
+}
+
+
+@media screen and (max-width:800px){
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left:30px;
+    background-color: rgba(211, 26, 26, 0.8);
+    height:150px; width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(97, 38, 38, 0.5);
+    padding: 2px 2px;
+    z-index: 1;
+  }
+  
+  #secondleft {
+      order:4;
+  }
+  
+  #secondright {
+      order:3;
+  }
+}
+
+  .show-menu-btn, .hide-menu-btn{
+    display: block;
+  }
+
+  .menu{
+    position: fixed; width: 100%; height:80vh; background: #333; margin-top:10px;
+    right: -50%; top:0; text-align: center; padding: 80px 0; line-height: normal;
+    transition: 0.7s;
+  }
+  
+  .menu li{ clear:both; display: block; padding: 10px;}
+
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right:40px;
+  }
+
+  #chk{
+    position: absolute; visibility: none; z-index: -11;
+  }
+  
+}

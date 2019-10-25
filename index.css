@@ -1,0 +1,48 @@
+#container{ margin-left: 100px; }
+#divtopslider{ width:100%; height:500px; 
+  background-image: url('product1.jpg'); 
+  animation: slide 20s infinite;
+}
+@keyframes slide{
+  33%{
+    background: url(product2.jpg)
+  }
+  66%{
+    background: url(product3.jpg)
+  }
+  100%{
+    background: url(product1.jpg)
+  }
+}
+
+#divtopslider p{
+    margin:0; position: relative; top:5%; left:50%; font-size: 40px; color: rgb(245, 210, 57);
+    font-weight: bold; font-family:Arial, Helvetica, sans-serif;
+}
+#divbuttons{ position: relative; top: 65%; left:25%;}
+#divbuttons button a{ text-decoration:none; font-size: 18px; font-weight: bold; }
+.divmiddlebox{
+    background-color: #eeeeee; margin:10px 20px;
+    height: 280px; width:230px; padding:20px 10px;
+}
+.divmiddlebox:hover{ background-color:rgb(245, 210, 57);}
+.divmiddlebox img{ margin-left:auto; margin-right:auto; display:block; margin-top:20px;}
+.divmiddlebox p{ text-align: center; padding:5px 5px;}
+.divmiddlebox a{
+    text-decoration:none; color: #000000; font-size:22px; font-weight: bold;
+}
+#pmiddle{text-align:center; font-size:28px; margin:5px 10px; padding-top:0px;}
+#divbottom{margin-top:50px;}
+#divbottom table{margin-left: auto; margin-right: auto;}
+#bottomtable p{font-size: 18px; text-align:justify;}
+footer{
+    background-color: rgb(245, 210, 57); margin-right:50px; color:#ffffff;
+    margin-left: 100px;
+}
+button{
+    border:2px solid #ffffff; background-color:rgb(245, 210, 57); color: #ffffff;
+    padding:10px 10px; margin-left:200px;
+}
+button a{ text-decoration:none; font-size:14px; font-weight: bold; }
+button a:hover{color:#ffffff;}
+  

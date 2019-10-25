@@ -1,0 +1,30 @@
+.div_photo_container{
+    float: left; margin-left:10px; margin-bottom:15px;
+    width: 200px; height: 200px; border-radius:5%;
+    background-color: #bbbbbb; border: 1px solid red; 
+}
+#div_photo_container::after{
+   float: none;
+   clear: both;
+}
+
+#div_photo_container figure { padding:0; border:1px solid red;}
+.div_photo_container img{
+    margin: 5px 5px; border:1px solid blue;
+}
+#image-holder {
+  width: 600px; height: auto; position: absolute;
+  left: 300px;  top: 200px; /* Or perhaps different coordinates */
+  display: none; border:3px solid blue; border-radius:3%;
+}
+#image-holder:hover{
+  cursor: pointer;
+}
+
+#tbdesc tr{
+  width:50%;
+}
+
+#tbdesc td{
+  padding:5px 10px; border: 1px solid red;
+}

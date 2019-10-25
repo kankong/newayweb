@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NEWAY Industry</title>
+    <link rel="stylesheet" href="nav.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            //alert("I am checked!");
+            var checkBox = document.getElementById("chk");
+
+            // Get the UL element
+            var ul = document.getElementById("menu");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                ul.style.right = "-120%";
+            } else {
+                ul.style.right = "-50%";
+            }
+
+        } 
+    </script>
+    <style>
+        #container {
+            margin-left: 10%;
+            margin-right: auto;
+        }
+
+        #divtop h1 {
+            text-align: center;
+        }
+
+        #divtop img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 20px;
+            width: 300px;
+            height: 200px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        table p {
+            line-height: 1.8;
+        }
+
+        table td ul li {
+            line-height: 1.8em;
+            height: auto;
+        }
+
+        #divpartners {
+            background-image: url('');
+            background-color: beige;
+            width: 100%;
+            height: 250px;
+        }
+
+        #divpartners ul {
+            margin-top: 70px;
+        }
+
+        #divpartners ul li {
+            float: left;
+            width: 160px;
+            list-style-type: none;
+        }
+
+        #divpartners ul li img {
+            width: 80px;
+        }
+
+        #divtestimonial span {
+            margin: 4px 10px;
+        }
+
+        #divtestimonial h3 {
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divnav">
+        <span class="sphead">
+            <img src="CompanyLogoSm.png" />
+            <p>NEWAY INDUSTRIES</p>
+        </span>
+        <ul class="menu" id="menu">
+
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li>
+                <div class="dropdown">
+                    <span>MATERIAL</span>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="tiles.html">TILES</a></li>
+                            <li><a href="marble.html">MARBLE</a></li>
+                            <li><a href="light.html">LIGHTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <input type="checkbox" id="chk" onclick="myFunction()">
+        <!--
+                            <label for="chk" class="show-menu-btn"><i class="fas fa-ellipsis-h"></i></label>
+                            -->
+        <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+    </div>
+
+    <div id="container">
+        <div id="divtop">
+            <H1>We are NEWAY Industry</h1>
+            <img src="product1.jpg" width="300px" height="300px" />
+        </div>
+        <div id="divintro">
+            <table width="1000px">
+                <tr>
+                    <td width=50% style="border:3px solid rgb(245, 210, 57); padding:20px 20px;">
+                        <h3>INTRODUCTORY</h3>
+                        <p>
+                            What motivates us? It's simple. We are driven to do the absolute best for our
+                            customers. It's why we came together to offer multi-trade solutions. The convenience
+                            and quality control of a one-stop source just made sense. Having a full working
+                            Partnership of highly qualified HVAC technicians, plumbers, electricians and building
+                            professionals in-house allows us to always provide exceptional and prompt service on
+                            all products we provide. We make safety a priority, are conscious of the bottom line,
+                            and stand behind everything we manufacture and procure with confidence. Everyone at Neway
+                            Industry shares this commitment to go above and beyond. It's what keeps our customers
+                            coming back year after year, and why they're happy to refer us to others and grow with us.
+                            Our reward? The satisfaction of a job well done.
+                        </p>
+                        <p style="text-align:right;"><b>Artur Airapetian</b><br />
+                            Director - Co-Founder</p>
+                        <img src="Artur_signature.png" width="400px" height="130px">
+                    </td>
+                    <td style="padding-left:20px;">
+                        <h3>OUR PASSION</h3>
+                        <ul>
+                            <li>Understanding and responding to our internal and external customers'
+                                business needs and challenges and constantly changing market conditions</li>
+                            <li>Seeking, establishing and maintaining vendor relationships that meet our requirements
+                                while providing the best value at the lowest total cost, with minimal supply chain risks
+                            </li>
+                            <li>
+                                Improving processes to facilitate ease of procurement, drive innovation and to reduce
+                                transactional costs through continuous streamlining of the procurement processes
+                            </li>
+                            <li>Taking a lead role on all strategic procurement initiatives</li>
+                            <li>Remaining open, competitive and fair in our business practices</li>
+                        </ul>
+                        <h3>OUR MISSION</h3>
+                        <p>Our mission is to provide services adding value and improvement in support of
+                            PPD's business success. The procurement team is committed to acting, in accordance
+                            with best practices, as a leader among service providers, recognized for innovative
+                            and high-quality, cost-effective approaches to meeting and exceeding our internal
+                            and external customers' expectations.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="divpartners">
+            <p style="text-align: center; position: relative; top:30px; font-size:28px; color: #aaaaaa;"><b>Our Partners
+                    </b</p> <ul>
+                    <li><img src="PartnerLogos/AcritecLogo.png"></li>
+                    <li><img src="PartnerLogos/HariStonesLogo.png"></li>
+                    <li><img src="PartnerLogos/LeVanierLogo.png"></li>
+                    <li><img src="PartnerLogos/RichelieuHardwareLogo.png"></li>
+                    <li><img src="PartnerLogos/RiobelLogo.png"></li>
+                    <li><img src="PartnerLogos/WestCoastFloorsLogo.png"></li>
+                    <li><img src="PartnerLogos/YDGGlass&MirrorLogo.png"></li>
+                    </ul>
+        </div>
+        <div>
+            <h3>Our skill</h3>
+            <hr align="left" width="50px" color="#ddbb22">
+            <p style="font-weight: normal; line-height: 1.8;">
+                Commercial and Multi Family construction supply, procurement and installation experts.<br />
+                With a combined 80 years of experience in the construction industry, we are a
+                conglomerated new and growing construction supply and install distribution team
+                dedicated to providing quality, time efficient, and cost-conscious projects to our
+                customers. Our services include wholesale material supply, renovations and new
+                construction in the commercial, industrial, institutional, and agricultural fields.
+                We have a strong working relationship with local trades and offer an excellent teamwork
+                environment to our projects.
+
+            </p>
+        </div>
+        <div>
+            <iframe width="910" height="512" src="https://www.youtube.com/embed/wPR_KoSSofA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <div id="divtestimonial">
+            <h3>Our Testimonial</h3>
+            <span>
+                <embed src="Bosch_Reference_Letter.pdf" width="450" height="600" type="application/pdf">
+            </span>
+            <span>
+                <embed src="Mercury_Constructing_Letter.pdf" width="450" height="600" type="application/pdf">
+            </span>
+        </div>
+    </div>
+    <br /><br />
+    <footer style="text-align:center">&copy;Neway Industry. All rights reserved</footer>
+</body>
+
+</html>
